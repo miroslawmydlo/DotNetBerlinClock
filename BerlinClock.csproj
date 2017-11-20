@@ -50,6 +50,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BDD\BerlinClockFeatureSteps.cs" />
+    <Compile Include="BDD\BerlinClockInputValidation.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BerlinClockInputValidation.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Enums\LampState.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BDD\BerlinClockFeatureSteps.feature.cs">
       <AutoGen>True</AutoGen>
@@ -61,6 +67,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="BDD\BerlinClockInputValidation.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>BerlinClockInputValidation.feature.cs</LastGenOutput>
+    </None>
     <None Include="packages.config" />
     <None Include="BDD\BerlinClockFeatureSteps.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
@@ -70,6 +80,7 @@
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
